@@ -1,5 +1,6 @@
 import instance from "../API/axios";
 import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 
 const { useState } = require("react");
@@ -50,6 +51,7 @@ const InscriptionPage = () =>{
             <input type="text" name="code_postal" defaultValue={code_postal} placeholder="CP" onChange={(e) => {setCode_Postal(e.target.value)}}/>
             <input type="text" name="pays" defaultValue={pays} placeholder="pays" onChange={(e) => {setPays(e.target.value)}}/>
         </div>
+        <Footer/>
     </>
 }
 export default InscriptionPage;
