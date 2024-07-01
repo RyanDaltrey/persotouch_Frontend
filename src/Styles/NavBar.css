@@ -1,0 +1,12 @@
+
+
+.block_navbar{
+    display: flex;
+    justify-content: space-between;
+padding: 10px 5px 10px 5px;
+}
+
+.content_serviceClient{
+    display: flex;
+}
+
