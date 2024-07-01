@@ -20,9 +20,9 @@ const Accueil = () => {
 
     return <>
     
-    {produits.map((produits, index) => {
-        <CardProduits produits={produits} key={(index)} />
-    })}
+    {produits.map((produits, index) => (
+        <CardProduits produits={produits} key={index} />
+    ))}
 
     </>
 }
