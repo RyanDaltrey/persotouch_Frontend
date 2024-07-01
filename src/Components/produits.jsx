@@ -1,14 +1,14 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-    const CardProduits = ({produits , id}) =>{
+    const CardProduits = ({produits}) =>{
 
         // const navigate = useNavigate();
    
 
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={produits.image_cat} />
+      <Card.Img variant="top" src={produits.img_cat} />
       <Card.Body>
         <Card.Title>{produits.nom_pro}</Card.Title>
         <Card.Text>
