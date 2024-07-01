@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import produitsService from "../Services/produitsService";
-import CardProduits from "../Components/Produits";
 import NavBar from "../Components/NavBar";
+import CardProduits from "../Components/produits";
 
 const Accueil = () => {
     const [produits, setProduits] = useState([]);
@@ -21,11 +21,11 @@ const Accueil = () => {
 
     return <>
     <NavBar/>
-
+    <div className="d-flex gap-5 flex-wrap justify-content-center mt-5">
     {produits.map((produits, index) => (
         <CardProduits produits={produits} key={index} />
     ))}
-
+    </div>
     </>
 }
 export default Accueil;
