@@ -1,0 +1,22 @@
+.block_inscription{
+    max-width: 50%;
+}
+
+.texte_inscription{
+    max-width: 40%;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.titre_page_inscription{
+   background-color: red;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+.texte_accroche_page_inscription{
+  display: flex;
+  justify-content: center;
+}
+

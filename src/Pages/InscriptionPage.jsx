@@ -1,6 +1,7 @@
 import instance from "../API/axios";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
+import '../Styles/Inscription.css'
 
 
 const { useState } = require("react");
@@ -40,7 +41,13 @@ const InscriptionPage = () =>{
 
     return <>
         <NavBar/>
-        <div>
+        <div className="titre_page_inscription">
+            <h3>Créer un compte!</h3>
+            </div>
+        <div className="texte_accroche_page_inscription">
+            <p className="texte_inscription">Le compte PersoTouch vous permet de gagner du temps au moment du paiement, d'accéder à votre panier à partir de n'importe quel appareil et de consulter l'historique de vos commandes.</p>
+        </div>
+        <div className="block_inscription">
             <button onClick={() => {register()}}>Inscription</button>
             <input type="text" name="prenom" defaultValue={prenom} placeholder="prenom" onChange={(e) => {setPrenom(e.target.value)}}/>
             <input type="text" name="nom" defaultValue={nom} placeholder="nom" onChange={(e) => {setNom(e.target.value)}}/>
