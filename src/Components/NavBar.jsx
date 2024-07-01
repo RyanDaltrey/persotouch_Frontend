@@ -12,7 +12,7 @@ const NavBar = () => {
             </div>
             <h1>PERSOTOUCH</h1>
             <div className='icon_client_panier'>
-            <PersonOutlineOutlinedIcon/>
+             <a href="/inscription"><PersonOutlineOutlinedIcon  className='icon_utilisateur'/></a>
             <ShoppingBagOutlinedIcon/>
             </div>
         </div>

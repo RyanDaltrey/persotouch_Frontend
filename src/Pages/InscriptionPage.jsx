@@ -1,8 +1,9 @@
 import instance from "../API/axios";
+import NavBar from "../Components/NavBar";
+
+
 const { useState } = require("react");
 const { useNavigate } = require("react-router-dom")
-
-
 
 const InscriptionPage = () =>{
 
@@ -37,6 +38,7 @@ const InscriptionPage = () =>{
     }
 
     return <>
+        <NavBar/>
         <div>
             <button onClick={() => {register()}}>Inscription</button>
             <input type="text" name="prenom" defaultValue={prenom} placeholder="prenom" onChange={(e) => {setPrenom(e.target.value)}}/>
