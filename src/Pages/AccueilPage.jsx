@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import produitsService from "../Services/produitsService";
 import NavBar from "../Components/NavBar";
 import CardProduits from "../Components/produits";
+import Footer from "../Components/Footer";
 
 const Accueil = () => {
     const [produits, setProduits] = useState([]);
@@ -26,6 +27,7 @@ const Accueil = () => {
         <CardProduits produits={produits} key={index} />
     ))}
     </div>
+    <Footer/>
     </>
 }
 export default Accueil;

@@ -1,0 +1,29 @@
+
+
+.block_reseaux_sociaux{
+max-width: 15%;
+display: flex ;
+justify-content: space-around;
+}
+
+.content_footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.content_mentions_legales{
+    display: flex;
+    justify-content: space-around;
+}
+
+.test{
+max-width: 42%;
+display: flex;
+justify-content: space-around;
+margin-top: 40px;
+}
+
+.content_mentions_legales{
+    margin-top: 40px;
+}
