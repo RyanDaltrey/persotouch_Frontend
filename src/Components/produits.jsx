@@ -14,7 +14,6 @@ import Card from 'react-bootstrap/Card';
         <Card.Text>
           {produits.prix}€
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
   );
