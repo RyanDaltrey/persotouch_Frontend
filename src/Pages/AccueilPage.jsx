@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import produitsService from "../Services/produitsService";
+import CardProduits from "../Components/produits";
 
 const Accueil = () => {
     const [produits, setProduits] = useState([]);
@@ -17,5 +18,12 @@ const Accueil = () => {
         fetchProduits();
     }, [])
 
+    return <>
     
+    {produits.map((produits, index) => {
+        <CardProduits produits={produits} key={(index)} />
+    })}
+
+    </>
 }
+export default Accueil;
