@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import produitsService from "../Services/produitsService";
-import CardProduits from "../Components/produits";
+import CardProduits from "../Components/Produits";
+import NavBar from "../Components/NavBar";
 
 const Accueil = () => {
     const [produits, setProduits] = useState([]);
@@ -19,7 +20,8 @@ const Accueil = () => {
     }, [])
 
     return <>
-    
+    <NavBar/>
+
     {produits.map((produits, index) => (
         <CardProduits produits={produits} key={index} />
     ))}
