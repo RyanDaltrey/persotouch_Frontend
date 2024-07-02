@@ -61,7 +61,7 @@ const InscriptionPage = () =>{
             <input type="text" name="ville" defaultValue={ville} placeholder="ville" onChange={(e) => {setVille(e.target.value)}} className="input_inscription"/>
             <input type="text" name="code_postal" defaultValue={code_postal} placeholder="CP" onChange={(e) => {setCode_Postal(e.target.value)}} className="input_inscription"/>
             <input type="text" name="pays" defaultValue={pays} placeholder="pays" onChange={(e) => {setPays(e.target.value)}}className="input_inscription"/>
-            <button onClick={() => {register()}} className="boutton_inscription">Inscription</button>
+            <button onClick={() => {register()}} className="boutton_inscription">Créer un compte</button>
         </div>
         <Footer/>
     </>
