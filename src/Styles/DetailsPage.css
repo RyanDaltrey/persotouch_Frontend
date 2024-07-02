@@ -1,0 +1,31 @@
+.block_infos_produits{
+    margin-top: 100px;
+}
+
+.image_produits_details{
+    width: 500px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+.content_infos_produits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 30%;
+    position: relative;
+    left: 70%;
+}
+
+.boutton_ajout_panier{
+    margin-left: 30px;
+    border-radius: 4px;
+    padding: 0px 50px 0px 50px;
+    border: 1px solid rgb(205, 203, 203);
+}
+
+.prix_boutton{
+    display: flex;
+    text-align: center;
+}

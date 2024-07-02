@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from '../Components/Footer';
 import NavBar from '../Components/NavBar';
+import '../Styles/DetailsPage.css';
 
 
 const DetailsPage = () => {
@@ -14,7 +15,6 @@ const DetailsPage = () => {
         try {
            const responseCard = await produitsService.getProduitById(id);
            setProduits(responseCard.data);
-           console.log(responseCard.data);
         } catch (error) {
             console.log(error)
         }
@@ -27,17 +27,19 @@ const DetailsPage = () => {
 
     return <>
     <NavBar/>
-        <div>
-            <img src="{produits.img_cat" alt="image_produits_details" className="image_produits_details"/>
+    <div className='block_infos_produits'>
+        <div className='image_page_details'>
+            <img src={produits.img_cat}alt="image_produits_details" className="image_produits_details"/>
         </div>
-        <div>
+        <div className='content_infos_produits'>
             <h2>{produits.nom_pro}</h2>
             <p>{produits.des_pro}</p>
-            <p>{produits.prix}</p>
+            <div className='prix_boutton'>
+            <p>{produits.prix}.00€</p>
+            <button className='boutton_ajout_panier'>Ajouter au panier</button> 
+            </div>
         </div>
-        <div>
-            <button>Ajouter au panier</button>
-        </div>
+    </div>
     <Footer/>    
     </>
 }
