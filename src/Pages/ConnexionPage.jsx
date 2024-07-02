@@ -1,6 +1,9 @@
 import { useState } from "react";
 import instance from "../API/axios";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
+
 
 const ConnexionPage = () =>{
 
@@ -24,11 +27,13 @@ const ConnexionPage = () =>{
 
 
 return <>
+    <NavBar/>
     <div>
         <input type="email" name="email" defaultValue={email} onChange={(e) => {setEmail(e.target.value)}} placeholder="email" />
         <input type="password" name="mdp" defaultValue={mdp} onChange={(e) => {setMdp(e.target.value)}} placeholder="mot de passe"/>
         <boutton onClick={() => {login()}}>Connexion</boutton>
     </div>
+    <Footer/>
     </>
 
 }
