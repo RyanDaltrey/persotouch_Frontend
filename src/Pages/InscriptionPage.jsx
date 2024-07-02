@@ -48,7 +48,7 @@ const InscriptionPage = () =>{
             <p className="texte_inscription">Le compte PersoTouch vous permet de gagner du temps au moment du paiement, d'accéder à votre panier à partir de n'importe quel appareil et de consulter l'historique de vos commandes.</p>
         </div>
         <div className="deja_un_compte">
-            <a href="/"><p>Vous avez deja un compte? Vous connecter </p></a><ArrowForwardIosOutlinedIcon/>
+            <a href="/connexion"><p>Vous avez deja un compte? Vous connecter </p></a><ArrowForwardIosOutlinedIcon/>
             <img src={require("../Assets/instagram_post_bijoux.png")} alt="" className="image_inscription"></img>
         </div>
 
