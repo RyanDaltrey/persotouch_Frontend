@@ -19,9 +19,15 @@
 .deja_un_compte{
     display: flex;
     font-weight: bold;
-    max-width: 50%;
     letter-spacing: 1px;
     margin-left: 20px;
+}
+
+.image_inscription{
+    width: 500px;
+    position: absolute;
+    left: 60%;
+    top: 40%;
 }
 
 .block_inscription{

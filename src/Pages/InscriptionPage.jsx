@@ -49,6 +49,7 @@ const InscriptionPage = () =>{
         </div>
         <div className="deja_un_compte">
             <p>Vous avez deja un compte? Vous connecter </p> <ArrowForwardIosOutlinedIcon/>
+            <img src={require("../Assets/instagram_post_bijoux.png")} alt="" className="image_inscription"></img>
         </div>
 
         <div className="block_inscription">
