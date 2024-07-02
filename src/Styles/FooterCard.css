@@ -1,5 +1,4 @@
 
-
 .block_reseaux_sociaux{
 max-width: 15%;
 display: flex ;
@@ -26,4 +25,9 @@ margin-top: 40px;
 
 .content_mentions_legales{
     margin-top: 40px;
+}
+
+.block_footer{
+width: 100%;
+margin-top: 400px;
 }
