@@ -36,7 +36,7 @@ return <>
     <div className="pas_de_compte">
         <a href="/inscription"><p>Vous n'avez pas encore de compte ? créer un compte</p></a>
         <ArrowForwardIosOutlinedIcon/>
-        <img src={require("../Assets/montage_collection_bijoux.png")} className="image_page_connexion"></img>
+        <img src={require("../Assets/montage_collection_bijoux.png")} className="image_page_connexion" alt="image_montage_connexion"></img>
     </div>
     <div className="block_connexion">
         <input type="email" name="email" defaultValue={email} onChange={(e) => {setEmail(e.target.value)}} placeholder="email" className="input_connexion" />

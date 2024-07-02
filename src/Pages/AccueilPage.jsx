@@ -23,7 +23,7 @@ const Accueil = () => {
 
     return <>
     <NavBar/>
-    <img src={require("../Assets/header_nouvelle_collection.png")} className="image_header_accueil"></img>
+    <img src={require("../Assets/header_nouvelle_collection.png")} alt="image_accueil_nouvelle_collection" className="image_header_accueil"></img>
     <div className="d-flex gap-5 flex-wrap justify-content-center mt-5">
     {produits.map((produits, index) => (
         <CardProduits produits={produits} key={index} />
