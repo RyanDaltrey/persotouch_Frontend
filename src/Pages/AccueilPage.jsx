@@ -17,6 +17,11 @@ const Accueil = () => {
         }
     }
 
+    // handleClick = () => {
+    //     const element = document.getElementById('buttonProduits')
+    //     console.log(element)
+    // }
+
     useEffect(() => {
         fetchProduits();
     }, [])
@@ -28,6 +33,7 @@ const Accueil = () => {
     {produits.map((produits, index) => (
         <CardProduits produits={produits} key={index} />
     ))}
+    {/* <button id="buttonProduits" onClick={() => this.handleClick()}>Test</button> */}
     </div>
     <Footer/>
     </>

@@ -1,5 +1,4 @@
 import produitsService from '../Services/produitsService';
-import instance from '../API/axios';
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -9,7 +8,7 @@ const DetailsPage = () => {
     const [produits, setProduits] = useState({});
 
 
-    const fetchProduit = async () =>{
+    const fetchProduitById = async () =>{
         try {
            const responseCard = await produitsService.getProduitById(id);
            setProduits(responseCard.data);
@@ -19,8 +18,8 @@ const DetailsPage = () => {
         }
     }
 
-    useEffect(() => {
-        fetchProduit();
+    useEffect(() =>{
+        fetchProduitById();
     }, [])
 
 
