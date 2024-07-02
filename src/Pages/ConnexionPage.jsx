@@ -34,7 +34,7 @@ return <>
         <h3>Se Connecter</h3>
     </div>
     <div className="pas_de_compte">
-        <p>Vous n'avez pas encore de compte ? créer un compte</p>
+        <a href="/inscription"><p>Vous n'avez pas encore de compte ? créer un compte</p></a>
         <ArrowForwardIosOutlinedIcon/>
         <img src={require("../Assets/montage_collection_bijoux.png")} className="image_page_connexion"></img>
     </div>
