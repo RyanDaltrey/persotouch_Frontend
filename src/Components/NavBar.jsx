@@ -10,7 +10,7 @@ const NavBar = () => {
             <div className='content_serviceClient'>
             <RoomServiceOutlinedIcon/><p>Service client</p>
             </div>
-            <a href="/"><h1>PERSOTOUCH</h1></a>
+            <a href="/" className='lien_accueil'><h1>PERSOTOUCH</h1></a>
             <div className='icon_client_panier'>
              <a href="/inscription"><PersonOutlineOutlinedIcon  className='icon_utilisateur'/></a>
             <ShoppingBagOutlinedIcon/>
