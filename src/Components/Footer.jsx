@@ -7,7 +7,7 @@ const Footer = () => {
                 <p>Nos Réseaux</p>
                 <p>Nous contacter</p>
             </div>
-            <div className='test'>    
+            <div className='nos_reseaux_et_images_reseaux'>    
                 <div className='block_reseaux_sociaux'>
                 <img src={require("../Assets/instagram_icon_footer.png")} alt="instagram_icon"/>
                 <img src={require("../Assets/tiktok_icon_footer.png")} alt="tiktok_icon" />
