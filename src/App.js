@@ -5,6 +5,7 @@ import AccueilPage from './Pages/AccueilPage'
 import './App.css';
 import InscriptionPage from './Pages/InscriptionPage';
 import ConnexionPage from './Pages/ConnexionPage';
+import DetailsPage from './Pages/DetailsPage';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path ="/" element={<AccueilPage/>}/>
         <Route path='/inscription' element={<InscriptionPage/>}/>
         <Route path='/connexion' element={<ConnexionPage/>}/>
+        <Route path='/produits/id' element={<DetailsPage/>}/>
     </Routes>
     </BrowserRouter>
     </>
