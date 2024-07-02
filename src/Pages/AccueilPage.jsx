@@ -3,6 +3,7 @@ import produitsService from "../Services/produitsService";
 import NavBar from "../Components/NavBar";
 import CardProduits from "../Components/produits";
 import Footer from "../Components/Footer";
+import '../Styles/Accueil.css';
 
 const Accueil = () => {
     const [produits, setProduits] = useState([]);
@@ -22,6 +23,7 @@ const Accueil = () => {
 
     return <>
     <NavBar/>
+    <img src={require("../Assets/header_nouvelle_collection.png")} className="image_header_accueil"></img>
     <div className="d-flex gap-5 flex-wrap justify-content-center mt-5">
     {produits.map((produits, index) => (
         <CardProduits produits={produits} key={index} />

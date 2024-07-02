@@ -42,7 +42,7 @@ const InscriptionPage = () =>{
     return <>
         <NavBar/>
         <div className="titre_page_inscription">
-            <h3>Créer un compte!</h3>
+            <h3>Créer un compte</h3>
         </div>
         <div className="texte_accroche_page_inscription">
             <p className="texte_inscription">Le compte PersoTouch vous permet de gagner du temps au moment du paiement, d'accéder à votre panier à partir de n'importe quel appareil et de consulter l'historique de vos commandes.</p>
