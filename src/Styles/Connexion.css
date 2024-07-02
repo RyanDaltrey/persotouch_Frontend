@@ -1,0 +1,45 @@
+.titre_page_connexion{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.pas_de_compte{
+    display: flex;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.block_connexion{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    margin-left: 70px;
+}
+
+.boutton_connexion{
+    margin-top: 30px;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+}
+
+.input_connexion{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.image_page_connexion{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}

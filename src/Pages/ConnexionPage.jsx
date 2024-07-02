@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import '../Styles/Connexion.css';
 
 
 const ConnexionPage = () =>{
@@ -35,11 +36,12 @@ return <>
     <div className="pas_de_compte">
         <p>Vous n'avez pas encore de compte ? créer un compte</p>
         <ArrowForwardIosOutlinedIcon/>
+        <img src={require("../Assets/montage_collection_bijoux.png")} className="image_page_connexion"></img>
     </div>
-    <div>
-        <input type="email" name="email" defaultValue={email} onChange={(e) => {setEmail(e.target.value)}} placeholder="email" />
-        <input type="password" name="mdp" defaultValue={mdp} onChange={(e) => {setMdp(e.target.value)}} placeholder="mot de passe"/>
-        <boutton onClick={() => {login()}}>Connexion</boutton>
+    <div className="block_connexion">
+        <input type="email" name="email" defaultValue={email} onChange={(e) => {setEmail(e.target.value)}} placeholder="email" className="input_connexion" />
+        <input type="password" name="mdp" defaultValue={mdp} onChange={(e) => {setMdp(e.target.value)}} placeholder="mot de passe" className="input_connexion" />
+        <button onClick={() => {login()}} className="boutton_connexion">Connexion</button>
     </div>
     <Footer/>
     </>
