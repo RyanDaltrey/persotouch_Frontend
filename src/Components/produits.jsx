@@ -1,10 +1,7 @@
 
 import Card from 'react-bootstrap/Card';
 
-    const CardProduits = ({produits}) =>{
-
-        // const navigate = useNavigate();
-   
+    const CardProduits = ({produits}) =>{  
 
   return (
     <Card style={{ width: '18rem' }}>
