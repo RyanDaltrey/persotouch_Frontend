@@ -3,6 +3,7 @@ import instance from "../API/axios";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 
 const ConnexionPage = () =>{
@@ -28,6 +29,13 @@ const ConnexionPage = () =>{
 
 return <>
     <NavBar/>
+    <div className="titre_page_connexion">
+        <h3>Se Connecter</h3>
+    </div>
+    <div className="pas_de_compte">
+        <p>Vous n'avez pas encore de compte ? créer un compte</p>
+        <ArrowForwardIosOutlinedIcon/>
+    </div>
     <div>
         <input type="email" name="email" defaultValue={email} onChange={(e) => {setEmail(e.target.value)}} placeholder="email" />
         <input type="password" name="mdp" defaultValue={mdp} onChange={(e) => {setMdp(e.target.value)}} placeholder="mot de passe"/>
