@@ -1,9 +1,8 @@
-
-
 .block_navbar{
     display: flex;
     justify-content: space-between;
-padding: 10px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
+    background-color: rgb(249, 223, 254);
 }
 
 .content_serviceClient{
