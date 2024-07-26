@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import produitsService from "../Services/produitsService";
 import NavBar from "../Components/NavBar";
-import CardProduits from "../Components/produits";
+import CardProduits from "../Components/Produits";
 import Footer from "../Components/Footer";
 import '../Styles/Accueil.css';
 
