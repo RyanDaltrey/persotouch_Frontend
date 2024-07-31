@@ -1,11 +1,11 @@
 
 import Card from 'react-bootstrap/Card';
 
-    const CardProduits = ({produits}) =>{  
+    const CardProduit = ({produit}) =>{  
   
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={require('../Assets/' + produits.img_cat)} />
+      <Card.Img variant="top" src={require('../Assets/' + produit.img_cat)} />
       <Card.Body>
         <Card.Title>{produits.nom_pro}</Card.Title>
         <Card.Text>
@@ -15,4 +15,4 @@ import Card from 'react-bootstrap/Card';
     </Card>
   );
  }
-export default CardProduits;
+export default CardProduit;
