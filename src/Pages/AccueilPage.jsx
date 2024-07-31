@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import produitsService from "../Services/produitsService";
+import produitService from "../Services/produitService";
 import NavBar from "../Components/NavBar";
-import CardProduits from "../Components/produits";
+import CardProduit from "../Components/produits";
 import Footer from "../Components/Footer";
 import '../Styles/Accueil.css';
 
@@ -10,7 +10,7 @@ const Accueil = () => {
 
     const fetchProduits = async() => {
         try {
-            const response = await produitsService.getAllProduits();
+            const response = await produitService.getAllProduits();
             setProduits(response.data);
         } catch (error) {
             console.log(error)
@@ -31,8 +31,8 @@ const Accueil = () => {
     <NavBar/>
     <img src={require("../Assets/header_nouvelle_collection.png")} alt="image_accueil_nouvelle_collection" className="image_header_accueil"></img>
     <div className="d-flex gap-5 flex-wrap justify-content-center mt-5">
-    {produit.map((produit, index) => (
-        <CardProduits produit={produit} key={index} />
+    {produits.map((produit, index) => (
+        <CardProduit produits ={produit} key={index} />
     ))}
     {/* <button id="buttonProduits" onClick={() => this.handleClick()}>Test</button> */}
     </div>

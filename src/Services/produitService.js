@@ -1,6 +1,6 @@
 import axios from "axios";
 
-class produitsService {
+class produitService {
     static getAllProduits(){
         return axios.get("http://127.0.0.1:3000/produits");
     }
@@ -9,4 +9,4 @@ class produitsService {
         return axios.get("http://127.0.0.1:3000/produits/" + id);
     }
 }
-export default produitsService;
+export default produitService;
